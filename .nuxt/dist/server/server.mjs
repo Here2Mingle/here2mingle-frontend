@@ -1,1 +1,1 @@
-export { default } from "file:///C:/Users/sehilton/Documents/github/Internal-Portfolio/Amazon-Starter-Template/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"
+export { default } from "file:///C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/@nuxt/vite-builder/dist/runtime/vite-node.mjs"

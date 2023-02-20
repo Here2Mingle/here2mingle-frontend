@@ -24,6 +24,10 @@ body {
     width: 100%
 }
 
+.features6, .features19, .mbr-section-btn {
+    background-color: transparent !important;
+}
+
 /******************* Main Section CSS *********/
 
 #mainSection {

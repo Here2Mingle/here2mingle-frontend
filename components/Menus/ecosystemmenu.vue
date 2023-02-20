@@ -7,12 +7,12 @@
               </v-btn>
           </template>
           <v-card>
-              <v-toolbar dark color="info">
+              <v-toolbar dark color="warning">
                   <v-btn icon dark @click="dialog = false">
                       <v-icon icon="fas fa-circle-xmark"></v-icon>
                   </v-btn>
                   <v-card-title>
-                      <span class="text-h6">AppDev Community</span>
+                      <span class="text-h6">The Here2Mingle Company</span>
                   </v-card-title>
               </v-toolbar>
               <v-row style="padding: 10px;">

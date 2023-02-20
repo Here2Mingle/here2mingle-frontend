@@ -6,9 +6,10 @@ declare module '@nuxt/schema' {
     ["i18n"]?: typeof import("@nuxtjs/i18n").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["security"]?: typeof import("nuxt-security").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["meilisearch"]?: typeof import("nuxt-meilisearch").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["devtools"]?: typeof import("C:/Users/Basti/AppData/Roaming/npm/node_modules/@nuxt/devtools/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["nuxt-config-schema"]?: typeof import("nuxt-config-schema").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/apollo", NuxtConfig["apollo"]] | ["@nuxt/content", NuxtConfig["content"]] | ["@nuxtjs/i18n", NuxtConfig["i18n"]] | ["nuxt-security", NuxtConfig["security"]] | ["nuxt-meilisearch", NuxtConfig["meilisearch"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
+    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/apollo", NuxtConfig["apollo"]] | ["@nuxt/content", NuxtConfig["content"]] | ["@nuxtjs/i18n", NuxtConfig["i18n"]] | ["nuxt-security", NuxtConfig["security"]] | ["nuxt-meilisearch", NuxtConfig["meilisearch"]] | ["C:/Users/Basti/AppData/Roaming/npm/node_modules/@nuxt/devtools/module", NuxtConfig["devtools"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
   }
   interface RuntimeConfig {
    app: {
