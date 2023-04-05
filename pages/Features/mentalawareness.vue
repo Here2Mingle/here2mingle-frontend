@@ -1,5 +1,6 @@
 <template>
     <div>
+        <mentalbar />
         <section data-bs-version="5.1" class="features16 cid-twlypfiRHa" id="features16-g">
 
     
@@ -252,11 +253,12 @@
 </template>
 
 <script>
-    //import databaseCharts from '../components/charts/homeCharts/databaseCharts.vue'
+import mentalbar from '../../components/Menus/mentalbar.vue'
 
-    export default {
-        //components: { databaseCharts }
-    }
+export default {
+    components: { mentalbar },
+
+}
 </script>
 
 <script setup>

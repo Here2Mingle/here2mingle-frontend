@@ -1,7 +1,19 @@
-//import { defineNuxtConfig } from 'nuxt'
+import {
+  defineNuxtConfig
+} from 'nuxt/config'
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: {
+    head: {
+      script: [{
+        src: process.env.NUXT_PUBLIC_UMAMI_HOST,
+        async: true,
+        'data-website-id': process.env.NUXT_PUBLIC_UMAMI_ID
+      }],
+    },
+  },
+
   extends: ['@sidebase/core'],
 
   css: [
@@ -15,87 +27,101 @@ export default defineNuxtConfig({
     'vuetify/lib/styles/main.sass',
     '@mdi/font/css/materialdesignicons.min.css',
     '@fortawesome/fontawesome-svg-core/styles.css',
+    //'assets/commerce/css/ui.css',
     'assets/styles/styles.css',
   ],
 
   modules: [
-    '@nuxtjs/apollo',
+    'nuxt-graphql-client',
     //'@sidebase/nuxt-auth',
     '@nuxt/content',
-    '@nuxtjs/i18n',
-    "nuxt-security",
-    //'nuxt-vue3-google-signin',
     'nuxt-meilisearch',
+    'nuxt-directus',
   ],
 
- /* googleSignIn: {
-    clientId: 'CLIENT ID OBTAINED FROM GOOGLE API CONSOLE',
+  /*auth: {
+    strategies: {
+      local: false,
+      keycloak: {
+        scheme: "oauth2",
+        endpoints: {
+          authorization:
+            process.env.KEYCLOAK_API_URL +
+            "auth/realms/test-realm/protocol/openid-connect/auth",
+          token:
+            process.env.KEYCLOAK_API_URL +
+            "auth/realms/test-realm/protocol/openid-connect/token",
+          userInfo:
+            process.env.KEYCLOAK_API_URL +
+            "auth/realms/test-realm/protocol/openid-connect/userinfo",
+          logout:
+            process.env.KEYCLOAK_API_URL +
+            "auth/realms/test-realm/protocol/openid-connect/logout?redirect_uri=" +
+            encodeURIComponent("127.0.0.1"),
+        },
+        token: {
+          property: "access_token",
+          type: "Bearer",
+          name: "Authorization",
+          maxAge: 300,
+        },
+        refreshToken: {
+          property: "refresh_token",
+          maxAge: 60 * 60 * 24 * 30,
+        },
+        responseType: "code",
+        grantType: "authorization_code",
+        clientId: process.env.KEYCLOAK_CLIENTID,
+        scope: ["openid", "profile", "email"],
+        codeChallengeMethod: "S256",
+      },
+    },
+    redirect: {
+      login: "/Admin/Auth/login",
+      // logout: "/login",
+      home: "/index.vue",
+    },
   }, */
-  
-/*
-  auth: {
-    // The module is enabled. Change this to disable the module
-    isEnabled: false,
-    // The origin is set to the development origin. Change this when deploying to production
-    origin: 'http://localhost:3000',
-    // The base path to the authentication endpoints. Change this if you want to add your auth-endpoints at a non-default location
-    basePath: '/api/auth',
-    // Whether to periodically refresh the session. Change this to `true` for a refresh every seconds or set this to a number like `5000` for a refresh every 5000 milliseconds (aka: 5 seconds)
-    enableSessionRefreshPeriodically: true,
-    // Whether to refresh the session whenever a window focus event happens, i.e, when your user refocuses the window. Set this to `false` to turn this off
-    enableSessionRefreshOnWindowFocus: true,
-    // Whether to add a global authentication middleware that will protect all pages without exclusion
-    enableGlobalAppMiddleware: false
-  }, 
-  */
+
+  directus: {
+    url: process.env.DIRECTUS_URL,
+    auth: {
+      email: process.env.DIRECTUS_EMAIL,
+      password: process.env.DIRECTUS_PASSWORD,
+      token: process.env.DIRECTUS_TOKEN,
+    }
+  },
 
   meilisearch: {
-    hostUrl:  'http://my-meilisearch-server.domain.com',
-    searchApiKey: '<your_public_key>',
-    adminApiKey: '<your_secret_key>',
+    hostUrl: process.env.HOSTURL,
+    searchApiKey: process.env.SEARCH_APIKEY,
+    adminApiKey: process.env.ADMIN_APIKEY,
     serverSideUsage: true,
     instantSearch: {
       theme: 'algolia'
     }
- },
+  },
 
-  i18n: {
-    strategy: 'no_prefix',
-    en: { pathMatch: ['not-found-my-post'] },
-    fr: { pathMatch: ['not-found-mon-article'] },
-    locales: [
-      {
-        code: 'en',
-        name: 'English'
+  runtimeConfig: {
+    public: {
+      GQL_HOST: process.env.GQL_HOST,
+      'graphql-client': {
+        watch: true,
+        autoImport: true,
+        functionPrefix: 'Gql',
+        documentPaths: ['./graphql/queries/'],
+        preferGETQueries: false
       },
-      {
-        code: 'es',
-        name: 'Español'
-      },
-      {
-        code: 'fr',
-        name: 'Français'
-      }
-    ],
-    skipSettingLocaleOnNavigate: true,
-    detectBrowserLanguage: {
-      useCookie: true,
-      cookieCrossOrigin: true
     }
   },
 
-  apollo: {
-    clients: {
-      default: {
-        httpEndpoint: 'http://localhost:4000/graphql',
-        wsEndpoint: "ws://localhost:4000/graphql"
-      }
-    },
-  },
+
 
   build: {
     transpile: [
       'vuetify',
+      '@apollo/client',
+      'ts-invariant/process',
       "@fortawesome/vue-fontawesome",
       "@fortawesome/fontawesome-svg-core",
       "@fortawesome/pro-solid-svg-icons",

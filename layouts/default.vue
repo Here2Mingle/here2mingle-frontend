@@ -58,27 +58,30 @@
       <v-card>
         <v-layout>
           <v-navigation-drawer class="sidebarSection" v-model="drawer" temporary>
-            <v-list-item prepend-icon="fas fa-user-circle" title="Profile" value="Profile" style="color: red" nav>
+            <v-list-item prepend-icon="fas fa-user-circle" title="Profile" value="Profile" nav>
               <template v-slot:append>
                 <v-btn variant="text" icon="fas fa-chevron-left" @click.stop="rail = !rail"></v-btn>
               </template>
             </v-list-item>
 
             <v-list-item prepend-icon="fas fa-feather" title="Home" value="Home" color="blue" href="/"></v-list-item>
-            <v-list-item prepend-icon="fas fa-rss" title="Newsfeed" value="Newsfeed" style="color: aqua" href="/Social/Newsfeed"></v-list-item>
-            <v-list-item prepend-icon="fas fa-users" title="Members" value="Members" style="color: indianred" href="/Social/Members"></v-list-item>
-            <v-list-item prepend-icon="fas fa-user-plus" title="Friends" value="Friends" style="color: orange" href="/Social/Friends"></v-list-item>
-            <v-list-item prepend-icon="fas fa-users-line" title="Groups" value="Groups" style="color: orangered" href="/Social/Groups"></v-list-item>
-            <v-list-item prepend-icon="fas fa-video" title="Watch" value="Watch" style="color: purple" href="/Features/Watch"></v-list-item>
-            <v-list-item prepend-icon="fas fa-headphones" title="Audioroom" value="Audioroom" style="color: brown" href="/Features/Audioroom"></v-list-item>
-            <v-list-item prepend-icon="fas fa-tv" title="Channels" value="Channels" style="color: yellowgreen" href="/Features/Channels"></v-list-item>
-            <v-list-item prepend-icon="fas fa-gamepad" title="Games" value="Games" style="color: green" href="/Features/Games"></v-list-item>
-            <v-list-item prepend-icon="fas fa-newspaper" title="News" value="News" style="color: rebeccapurple" href="/Features/News"></v-list-item>
-            <v-list-item prepend-icon="fas fa-comment-dots" title="Messages" value="Messages" style="color: tomato" href="/Chat/Messages"></v-list-item>
+            <v-list-item prepend-icon="fas fa-rss" title="Newsfeed" value="Newsfeed" href="/Social/Newsfeed"></v-list-item>
+            <v-list-item prepend-icon="fas fa-users" title="Members" value="Members" href="/Social/Members"></v-list-item>
+            <v-list-item prepend-icon="fas fa-user-plus" title="Friends" value="Friends" href="/Social/Friends"></v-list-item>
+            <v-list-item prepend-icon="fas fa-users-line" title="Groups" value="Groups" href="/Social/Groups"></v-list-item>
+            <v-list-item prepend-icon="fas fa-video" title="Watch" value="Watch" href="/Features/Watch"></v-list-item>
+            <v-list-item prepend-icon="fas fa-headphones" title="Audioroom" value="Audioroom" href="/Features/Audioroom"></v-list-item>
+            <v-list-item prepend-icon="fas fa-tv" title="Channels" value="Channels" href="/Features/Channels"></v-list-item>
+            <v-list-item prepend-icon="fas fa-gamepad" title="Games" value="Games" href="/Features/Games"></v-list-item>
+            <v-list-item prepend-icon="fas fa-newspaper" title="News" value="News" href="/Features/News"></v-list-item>
+            <v-list-item prepend-icon="fas fa-utensils" title="Eats" value="Eats" href="/Chat/Eats"></v-list-item>
+            <v-list-item prepend-icon="fas fa-plane" title="Travel" value="Travel" href="/Chat/Travel"></v-list-item>
+            <v-list-item prepend-icon="fas fa-smile" title="Show Your Weird" value="Show Your Weird" href="/Chat/showyourweird"></v-list-item>
+            <v-list-item prepend-icon="fas fa-comment-dots" title="Messages" value="Messages" href="/Chat/Messages"></v-list-item>
             <v-divider></v-divider>
 
             <h5>Shop</h5>
-            <v-list-item prepend-icon="fas fa-shopping-cart" title="Shop" value="Shop" style="color: tan" href="/Shop/"></v-list-item>
+            <v-list-item prepend-icon="fas fa-shopping-cart" title="Shop" value="Shop" style="color: indianred" href="/Shop/"></v-list-item>
             <v-divider></v-divider>
 
             <h5>The Mind</h5>

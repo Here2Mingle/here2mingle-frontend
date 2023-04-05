@@ -1,61 +1,58 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join as join$1 } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { provider, isWindows } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/std-env/dist/index.mjs';
-import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, createError, getQuery, readBody, getCookie, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/nuxt/node_modules/h3/dist/index.mjs';
-import { createRenderer } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import devalue from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/vue/server-renderer/index.mjs';
-import { parseURL, withoutBase, joinURL, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/ufo/dist/index.mjs';
-import destr from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/destr/dist/index.mjs';
-import { snakeCase, kebabCase, pascalCase, camelCase } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/scule/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/hookable/dist/index.mjs';
-import { hash } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/ohash/dist/index.mjs';
-import { createStorage, prefixStorage } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unstorage/drivers/fs.mjs';
-import defu from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/defu/dist/defu.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/radix3/dist/index.mjs';
-import cache from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/memory-cache/index.js';
-import { performance } from 'perf_hooks';
-import { FilterXSS } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/xss/lib/index.js';
-import { defineCorsEventHandler } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/@nozomuikuta/h3-cors/dist/index.mjs';
-import { MeiliSearch } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/meilisearch/dist/bundles/meilisearch.cjs.js';
-import { extname, join } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/pathe/dist/index.mjs';
-import { unified } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unified/index.js';
-import { toString } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/mdast-util-to-string/index.js';
-import { preprocess } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/micromark/dev/lib/preprocess.js';
-import { postprocess } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/micromark/dev/lib/postprocess.js';
-import { stringifyPosition } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unist-util-stringify-position/index.js';
-import { markdownLineEnding, markdownSpace } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/micromark-util-character/dev/index.js';
-import { push, splice } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/micromark-util-chunked/dev/index.js';
-import { resolveAll } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/micromark-util-resolve-all/index.js';
-import remarkEmoji from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-emoji/index.js';
-import rehypeSlug from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/rehype-slug/index.js';
-import remarkSqueezeParagraphs from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-squeeze-paragraphs/index.js';
-import rehypeExternalLinks from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/rehype-external-links/index.js';
-import remarkGfm from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-gfm/index.js';
-import rehypeSortAttributeValues from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/rehype-sort-attribute-values/index.js';
-import rehypeSortAttributes from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/rehype-sort-attributes/index.js';
-import rehypeRaw from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/rehype-raw/index.js';
-import remarkMDC, { parseFrontMatter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-mdc/dist/index.mjs';
-import remarkParse from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-parse/index.js';
-import remark2rehype from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-rehype/index.js';
-import { all } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/mdast-util-to-hast/index.js';
-import { detab } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/detab/index.js';
-import { u } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unist-builder/index.js';
-import { encode } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/mdurl/index.js';
-import slugify from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/slugify/slugify.js';
-import { position } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unist-util-position/index.js';
-import { visit } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unist-util-visit/index.js';
-import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/shiki-es/dist/shiki.node.mjs';
-import consola from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unenv/runtime/npm/consola.mjs';
+import { provider, isWindows } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, getQuery, getCookie, createError, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/nuxt/node_modules/h3/dist/index.mjs';
+import { createRenderer } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import devalue from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/vue/server-renderer/index.mjs';
+import { parseURL, withoutBase, joinURL, withQuery, withLeadingSlash, withoutTrailingSlash, isRelative } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/ufo/dist/index.mjs';
+import destr from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/destr/dist/index.mjs';
+import { snakeCase, kebabCase, pascalCase, camelCase } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/scule/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/hookable/dist/index.mjs';
+import { hash } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/ohash/dist/index.mjs';
+import { createStorage, prefixStorage } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unstorage/drivers/fs.mjs';
+import defu from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/defu/dist/defu.mjs';
+import { toRouteMatcher, createRouter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/radix3/dist/index.mjs';
+import { GraphQLClient } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/graphql-request/dist/index.js';
+import { MeiliSearch } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/meilisearch/dist/bundles/meilisearch.cjs.js';
+import { extname, join } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/pathe/dist/index.mjs';
+import { unified } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unified/index.js';
+import { toString } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/mdast-util-to-string/index.js';
+import { preprocess } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/micromark/dev/lib/preprocess.js';
+import { postprocess } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/micromark/dev/lib/postprocess.js';
+import { stringifyPosition } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unist-util-stringify-position/index.js';
+import { markdownLineEnding, markdownSpace } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/micromark-util-character/dev/index.js';
+import { push, splice } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/micromark-util-chunked/dev/index.js';
+import { resolveAll } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/micromark-util-resolve-all/index.js';
+import remarkEmoji from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-emoji/index.js';
+import rehypeSlug from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/rehype-slug/index.js';
+import remarkSqueezeParagraphs from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-squeeze-paragraphs/index.js';
+import rehypeExternalLinks from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/rehype-external-links/index.js';
+import remarkGfm from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-gfm/index.js';
+import rehypeSortAttributeValues from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/rehype-sort-attribute-values/index.js';
+import rehypeSortAttributes from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/rehype-sort-attributes/index.js';
+import rehypeRaw from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/rehype-raw/index.js';
+import remarkMDC, { parseFrontMatter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-mdc/dist/index.mjs';
+import remarkParse from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-parse/index.js';
+import remark2rehype from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/remark-rehype/index.js';
+import { all } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/mdast-util-to-hast/index.js';
+import { detab } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/detab/index.js';
+import { u } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unist-builder/index.js';
+import { encode } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/mdurl/index.js';
+import slugify from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/slugify/slugify.js';
+import { position } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unist-util-position/index.js';
+import { visit } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unist-util-visit/index.js';
+import { BUNDLED_LANGUAGES, BUNDLED_THEMES, getHighlighter } from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/shiki-es/dist/shiki.node.mjs';
+import consola from 'file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/unenv/runtime/npm/consola.mjs';
 
-const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false},"/**":{"headers":{"Cross-Origin-Resource-Policy":"same-origin","Cross-Origin-Opener-Policy":"same-origin","Cross-Origin-Embedder-Policy":"require-corp","Content-Security-Policy":"base-uri 'self'; font-src 'self' https: data:; form-action 'self'; frame-ancestors 'self'; img-src 'self' data:; object-src 'none'; script-src-attr 'none'; style-src 'self' https: 'unsafe-inline'; upgrade-insecure-requests","Origin-Agent-Cluster":"?1","Referrer-Policy":"no-referrer","Strict-Transport-Security":"max-age=15552000; includeSubDomains","X-Content-Type-Options":"nosniff","X-DNS-Prefetch-Control":"off","X-Download-Options":"noopen","X-Frame-Options":"SAMEORIGIN","X-Permitted-Cross-Domain-Policies":"none","X-XSS-Protection":"0"}}}},"public":{"content":{"locales":[],"defaultLocale":"","integrity":"","experimental":{"stripQueryParameters":false,"clientDB":false},"api":{"baseURL":"/api/_content"},"navigation":{"fields":[]},"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4002/","documentDriven":false,"host":"","trailingSlash":false,"anchorLinks":{"depth":4,"exclude":[1]}},"meilisearchClient":{"hostUrl":"http://my-meilisearch-server.domain.com","searchApiKey":"<your_public_key>","serverSideUsage":true,"instantSearch":{"theme":"algolia"},"clientOptions":{"placeholderSearch":true,"paginationTotalHits":50,"finitePagination":true,"primaryKey":"","keepZeroFacets":false}}},"content":{"cacheVersion":2,"cacheIntegrity":"kc4UzpZUjI","transformers":[],"base":"","api":{"baseURL":"/api/_content"},"watch":{"ws":{"port":{"port":4000,"portRange":[4000,4040]},"hostname":"localhost","showURL":false}},"sources":{},"ignores":["\\.","-"],"locales":[],"defaultLocale":"","highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false,"experimental":{"clientDB":false,"stripQueryParameters":false}},"security":{"headers":{"crossOriginResourcePolicy":{"value":"same-origin","route":"/**"},"crossOriginOpenerPolicy":{"value":"same-origin","route":"/**"},"crossOriginEmbedderPolicy":{"value":"require-corp","route":"/**"},"contentSecurityPolicy":{"value":{"base-uri":["'self'"],"font-src":["'self'","https:","data:"],"form-action":["'self'"],"frame-ancestors":["'self'"],"img-src":["'self'","data:"],"object-src":["'none'"],"script-src-attr":["'none'"],"style-src":["'self'","https:","'unsafe-inline'"],"upgrade-insecure-requests":true},"route":"/**"},"originAgentCluster":{"value":"?1","route":"/**"},"referrerPolicy":{"value":"no-referrer","route":"/**"},"strictTransportSecurity":{"value":{"maxAge":15552000,"includeSubdomains":true},"route":"/**"},"xContentTypeOptions":{"value":"nosniff","route":"/**"},"xDNSPrefetchControl":{"value":"off","route":"/**"},"xDownloadOptions":{"value":"noopen","route":"/**"},"xFrameOptions":{"value":"SAMEORIGIN","route":"/**"},"xPermittedCrossDomainPolicies":{"value":"none","route":"/**"},"xXSSProtection":{"value":"0","route":"/**"}},"requestSizeLimiter":{"value":{"maxRequestSizeInBytes":2000000,"maxUploadFileRequestInBytes":8000000},"route":"","throwError":true},"rateLimiter":{"value":{"tokensPerInterval":150,"interval":"hour","fireImmediately":true},"route":"","throwError":true},"xssValidator":{"value":{},"route":"","throwError":true},"corsHandler":{"value":{"origin":"*","methods":["GET","HEAD","PUT","PATCH","POST","DELETE"],"preflight":{"statusCode":204}},"route":"","throwError":true},"allowedMethodsRestricter":{"value":"*","route":"","throwError":true},"hidePoweredBy":true,"basicAuth":false,"enabled":true},"serverMeilisearchClient":{"hostUrl":"http://my-meilisearch-server.domain.com","searchApiKey":"<your_public_key>","adminApiKey":"<your_secret_key>","serverSideUsage":true,"instantSearch":{"theme":"algolia"},"clientOptions":{"placeholderSearch":true,"paginationTotalHits":50,"finitePagination":true,"primaryKey":"","keepZeroFacets":false}}};
+const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{"GQL_HOST":"http://127.0.0.1:4001","graphql-client":{"clients":{"default":{"token":{"type":"Bearer","name":"Authorization"},"proxyCookies":true,"tokenStorage":{"mode":"cookie","cookieOptions":{"maxAge":604800,"secure":false},"name":"gql:default"},"preferGETQueries":false,"host":"http://127.0.0.1:4001"}},"watch":true,"autoImport":true,"functionPrefix":"Gql","documentPaths":["./graphql/queries/"],"preferGETQueries":false},"content":{"locales":[],"defaultLocale":"","integrity":"","experimental":{"stripQueryParameters":false,"clientDB":false},"api":{"baseURL":"/api/_content"},"navigation":{"fields":[]},"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"highlight":false,"wsUrl":"ws://localhost:4002/","documentDriven":false,"host":"","trailingSlash":false,"anchorLinks":{"depth":4,"exclude":[1]}},"meilisearchClient":{"hostUrl":"https://meeovicms.com:7700/","searchApiKey":"<your_public_key>","serverSideUsage":true,"instantSearch":{"theme":"algolia"},"clientOptions":{"placeholderSearch":true,"paginationTotalHits":50,"finitePagination":true,"primaryKey":"","keepZeroFacets":false}},"directus":{"url":"http://meeovicms.com:35901/","autoFetch":true,"fetchUserParams":"","token":""}},"graphql-client":{"clients":{}},"content":{"cacheVersion":2,"cacheIntegrity":"kc4UzpZUjI","transformers":[],"base":"","api":{"baseURL":"/api/_content"},"watch":{"ws":{"port":{"port":4000,"portRange":[4000,4040]},"hostname":"localhost","showURL":false}},"sources":{},"ignores":["\\.","-"],"locales":[],"defaultLocale":"","highlight":false,"markdown":{"tags":{"p":"prose-p","a":"prose-a","blockquote":"prose-blockquote","code-inline":"prose-code-inline","code":"prose-code","em":"prose-em","h1":"prose-h1","h2":"prose-h2","h3":"prose-h3","h4":"prose-h4","h5":"prose-h5","h6":"prose-h6","hr":"prose-hr","img":"prose-img","ul":"prose-ul","ol":"prose-ol","li":"prose-li","strong":"prose-strong","table":"prose-table","thead":"prose-thead","tbody":"prose-tbody","td":"prose-td","th":"prose-th","tr":"prose-tr"},"anchorLinks":{"depth":4,"exclude":[1]},"remarkPlugins":{},"rehypePlugins":{}},"yaml":{},"csv":{"delimeter":",","json":true},"navigation":{"fields":[]},"documentDriven":false,"experimental":{"clientDB":false,"stripQueryParameters":false}},"serverMeilisearchClient":{"hostUrl":"https://meeovicms.com:7700/","searchApiKey":"<your_public_key>","adminApiKey":"<your_secret_key>","serverSideUsage":true,"instantSearch":{"theme":"algolia"},"clientOptions":{"placeholderSearch":true,"paginationTotalHits":50,"finitePagination":true,"primaryKey":"","keepZeroFacets":false}}};
 const ENV_PREFIX = "NITRO_";
 const ENV_PREFIX_ALT = _runtimeConfig.nitro.envPrefix ?? process.env.NITRO_ENV_PREFIX ?? "_";
 const getEnv = (key) => {
@@ -82,8 +79,8 @@ function overrideConfig(obj, parentKey = "") {
   }
 }
 overrideConfig(_runtimeConfig);
-const config$1 = deepFreeze(_runtimeConfig);
-const useRuntimeConfig = () => config$1;
+const config$2 = deepFreeze(_runtimeConfig);
+const useRuntimeConfig = () => config$2;
 function deepFreeze(object) {
   const propNames = Object.getOwnPropertyNames(object);
   for (const name of propNames) {
@@ -95,7 +92,7 @@ function deepFreeze(object) {
   return Object.freeze(object);
 }
 
-const serverAssets = [{"baseName":"server","dir":"C:/Users/Basti/OneDrive/Documents/My Websites/Handmade Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/server/assets"}];
+const serverAssets = [{"baseName":"server","dir":"C:/Users/Basti/OneDrive/Documents/My Websites/Handmade Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/server/assets"}];
 
 const assets = createStorage();
 
@@ -109,12 +106,12 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend\\content","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend\\.nuxt\\content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\Applications\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('content:source:content', unstorage_47drivers_47fs({"name":"content:source:content","driver":"fs","base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend\\content","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache:content', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend\\.nuxt\\content-cache","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend\\server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"C:\\Users\\Basti\\OneDrive\\Documents\\My Websites\\Handmade Sites\\Javascript-Projects\\Nuxt-Projects\\AlternateCMS-Framework\\Here2MingleCompany-Sites\\here2mingle-frontend\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 const defaultCacheOptions = {
   name: "_",
@@ -350,9 +347,9 @@ function cloneWithProxy(obj, overrides) {
 }
 const cachedEventHandler = defineCachedEventHandler;
 
-const config = useRuntimeConfig();
+const config$1 = useRuntimeConfig();
 const _routeRulesMatcher = toRouteMatcher(
-  createRouter({ routes: config.nitro.routeRules })
+  createRouter({ routes: config$1.nitro.routeRules })
 );
 function createRouteRulesHandler() {
   return eventHandler((event) => {
@@ -398,19 +395,9 @@ function getRouteRulesForPath(path) {
   return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
 }
 
-const _avNxVjAFgC = (function(nitro) {
-  nitro.hooks.hook("render:response", (response) => {
-    if (response.headers["x-powered-by"]) {
-      delete response.headers["x-powered-by"];
-    } else if (response.headers["X-Powered-By"]) {
-      delete response.headers["X-Powered-By"];
-    }
-  });
-});
-
-const plugins = [
-  _avNxVjAFgC
-];
+function defineNitroPlugin(def) {
+  return def;
+}
 
 function defineRenderHandler(handler) {
   return eventHandler(async (event) => {
@@ -447,6 +434,34 @@ function defineRenderHandler(handler) {
     return typeof response.body === "string" ? response.body : JSON.stringify(response.body);
   });
 }
+
+const config = {"default":{"token":{"type":"Bearer","name":"Authorization"},"proxyCookies":true,"tokenStorage":{"mode":"cookie","cookieOptions":{"maxAge":604800,"secure":false},"name":"gql:default"},"preferGETQueries":false,"host":"http://127.0.0.1:4001"}};
+const clients = {};
+
+const GqlNitro = { clients, config };
+
+const _BM1lH106NZ = defineNitroPlugin(() => {
+  const GqlConfig = GqlNitro.config;
+  for (const [client, conf] of Object.entries(GqlConfig)) {
+    const serverHeaders = typeof conf?.headers?.serverOnly === "object" && conf?.headers?.serverOnly || void 0;
+    if (conf?.headers?.serverOnly) {
+      delete conf.headers.serverOnly;
+    }
+    const tokenName = conf.token.name;
+    const tokenType = conf.token.type;
+    const authToken = !tokenType ? conf?.token?.value : `${tokenType} ${conf?.token?.value}`;
+    const headers = {
+      ...conf?.headers,
+      ...serverHeaders,
+      ...conf?.token?.value && { [tokenName]: authToken }
+    };
+    GqlNitro.clients[client] = new GraphQLClient(conf.host, { headers });
+  }
+});
+
+const plugins = [
+  _BM1lH106NZ
+];
 
 function hasReqHeader(event, name, includes) {
   const value = getRequestHeader(event, name);
@@ -538,336 +553,9 @@ function publicAssetsURL(...path) {
   return path.length ? joinURL(publicBase, ...path) : publicBase;
 }
 
-const securityConfig$3 = useRuntimeConfig().security;
-const FILE_UPLOAD_HEADER = "multipart/form-data";
-const _2v7Soq = defineEventHandler(async (event) => {
-  if (["POST", "PUT", "DELETE"].includes(event.node.req.method)) {
-    const contentLengthValue = getRequestHeader(event, "content-length");
-    const contentTypeValue = getRequestHeader(event, "content-type");
-    const isFileUpload = contentTypeValue?.includes(FILE_UPLOAD_HEADER);
-    const requestLimit = isFileUpload ? securityConfig$3.requestSizeLimiter.value.maxUploadFileRequestInBytes : securityConfig$3.requestSizeLimiter.value.maxRequestSizeInBytes;
-    if (parseInt(contentLengthValue) >= requestLimit) {
-      if (securityConfig$3.requestSizeLimiter.throwError) {
-        throw createError({ statusCode: 413, statusMessage: "Payload Too Large" });
-      } else {
-        return { statusCode: 413, statusMessage: "Payload Too Large" };
-      }
-    }
-  }
-});
-
-// generate timestamp or delta
-// see http://nodejs.org/api/process.html#process_process_hrtime
-function hrtime(previousTimestamp) {
-    const clocktime = performance.now() * 1e-3;
-    let seconds = Math.floor(clocktime);
-    let nanoseconds = Math.floor((clocktime % 1) * 1e9);
-    if (previousTimestamp != undefined) {
-        seconds = seconds - previousTimestamp[0];
-        nanoseconds = nanoseconds - previousTimestamp[1];
-        if (nanoseconds < 0) {
-            seconds--;
-            nanoseconds += 1e9;
-        }
-    }
-    return [seconds, nanoseconds];
-}
-// The current timestamp in whole milliseconds
-function getMilliseconds() {
-    const [seconds, nanoseconds] = hrtime();
-    return seconds * 1e3 + Math.floor(nanoseconds / 1e6);
-}
-// Wait for a specified number of milliseconds before fulfilling the returned promise.
-function wait(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
-/**
- * A hierarchical token bucket for rate limiting. See
- * http://en.wikipedia.org/wiki/Token_bucket for more information.
- *
- * @param options
- * @param options.bucketSize Maximum number of tokens to hold in the bucket.
- *  Also known as the burst rate.
- * @param options.tokensPerInterval Number of tokens to drip into the bucket
- *  over the course of one interval.
- * @param options.interval The interval length in milliseconds, or as
- *  one of the following strings: 'second', 'minute', 'hour', day'.
- * @param options.parentBucket Optional. A token bucket that will act as
- *  the parent of this bucket.
- */
-class TokenBucket {
-    constructor({ bucketSize, tokensPerInterval, interval, parentBucket }) {
-        this.bucketSize = bucketSize;
-        this.tokensPerInterval = tokensPerInterval;
-        if (typeof interval === "string") {
-            switch (interval) {
-                case "sec":
-                case "second":
-                    this.interval = 1000;
-                    break;
-                case "min":
-                case "minute":
-                    this.interval = 1000 * 60;
-                    break;
-                case "hr":
-                case "hour":
-                    this.interval = 1000 * 60 * 60;
-                    break;
-                case "day":
-                    this.interval = 1000 * 60 * 60 * 24;
-                    break;
-                default:
-                    throw new Error("Invalid interval " + interval);
-            }
-        }
-        else {
-            this.interval = interval;
-        }
-        this.parentBucket = parentBucket;
-        this.content = 0;
-        this.lastDrip = getMilliseconds();
-    }
-    /**
-     * Remove the requested number of tokens. If the bucket (and any parent
-     * buckets) contains enough tokens this will happen immediately. Otherwise,
-     * the removal will happen when enough tokens become available.
-     * @param count The number of tokens to remove.
-     * @returns A promise for the remainingTokens count.
-     */
-    async removeTokens(count) {
-        // Is this an infinite size bucket?
-        if (this.bucketSize === 0) {
-            return Number.POSITIVE_INFINITY;
-        }
-        // Make sure the bucket can hold the requested number of tokens
-        if (count > this.bucketSize) {
-            throw new Error(`Requested tokens ${count} exceeds bucket size ${this.bucketSize}`);
-        }
-        // Drip new tokens into this bucket
-        this.drip();
-        const comeBackLater = async () => {
-            // How long do we need to wait to make up the difference in tokens?
-            const waitMs = Math.ceil((count - this.content) * (this.interval / this.tokensPerInterval));
-            await wait(waitMs);
-            return this.removeTokens(count);
-        };
-        // If we don't have enough tokens in this bucket, come back later
-        if (count > this.content)
-            return comeBackLater();
-        if (this.parentBucket != undefined) {
-            // Remove the requested from the parent bucket first
-            const remainingTokens = await this.parentBucket.removeTokens(count);
-            // Check that we still have enough tokens in this bucket
-            if (count > this.content)
-                return comeBackLater();
-            // Tokens were removed from the parent bucket, now remove them from
-            // this bucket. Note that we look at the current bucket and parent
-            // bucket's remaining tokens and return the smaller of the two values
-            this.content -= count;
-            return Math.min(remainingTokens, this.content);
-        }
-        else {
-            // Remove the requested tokens from this bucket
-            this.content -= count;
-            return this.content;
-        }
-    }
-    /**
-     * Attempt to remove the requested number of tokens and return immediately.
-     * If the bucket (and any parent buckets) contains enough tokens this will
-     * return true, otherwise false is returned.
-     * @param {Number} count The number of tokens to remove.
-     * @param {Boolean} True if the tokens were successfully removed, otherwise
-     *  false.
-     */
-    tryRemoveTokens(count) {
-        // Is this an infinite size bucket?
-        if (!this.bucketSize)
-            return true;
-        // Make sure the bucket can hold the requested number of tokens
-        if (count > this.bucketSize)
-            return false;
-        // Drip new tokens into this bucket
-        this.drip();
-        // If we don't have enough tokens in this bucket, return false
-        if (count > this.content)
-            return false;
-        // Try to remove the requested tokens from the parent bucket
-        if (this.parentBucket && !this.parentBucket.tryRemoveTokens(count))
-            return false;
-        // Remove the requested tokens from this bucket and return
-        this.content -= count;
-        return true;
-    }
-    /**
-     * Add any new tokens to the bucket since the last drip.
-     * @returns {Boolean} True if new tokens were added, otherwise false.
-     */
-    drip() {
-        if (this.tokensPerInterval === 0) {
-            const prevContent = this.content;
-            this.content = this.bucketSize;
-            return this.content > prevContent;
-        }
-        const now = getMilliseconds();
-        const deltaMS = Math.max(now - this.lastDrip, 0);
-        this.lastDrip = now;
-        const dripAmount = deltaMS * (this.tokensPerInterval / this.interval);
-        const prevContent = this.content;
-        this.content = Math.min(this.content + dripAmount, this.bucketSize);
-        return Math.floor(this.content) > Math.floor(prevContent);
-    }
-}
-
-/**
- * A generic rate limiter. Underneath the hood, this uses a token bucket plus
- * an additional check to limit how many tokens we can remove each interval.
- *
- * @param options
- * @param options.tokensPerInterval Maximum number of tokens that can be
- *  removed at any given moment and over the course of one interval.
- * @param options.interval The interval length in milliseconds, or as
- *  one of the following strings: 'second', 'minute', 'hour', day'.
- * @param options.fireImmediately Whether or not the promise will resolve
- *  immediately when rate limiting is in effect (default is false).
- */
-class RateLimiter {
-    constructor({ tokensPerInterval, interval, fireImmediately }) {
-        this.tokenBucket = new TokenBucket({
-            bucketSize: tokensPerInterval,
-            tokensPerInterval,
-            interval,
-        });
-        // Fill the token bucket to start
-        this.tokenBucket.content = tokensPerInterval;
-        this.curIntervalStart = getMilliseconds();
-        this.tokensThisInterval = 0;
-        this.fireImmediately = fireImmediately !== null && fireImmediately !== void 0 ? fireImmediately : false;
-    }
-    /**
-     * Remove the requested number of tokens. If the rate limiter contains enough
-     * tokens and we haven't spent too many tokens in this interval already, this
-     * will happen immediately. Otherwise, the removal will happen when enough
-     * tokens become available.
-     * @param count The number of tokens to remove.
-     * @returns A promise for the remainingTokens count.
-     */
-    async removeTokens(count) {
-        // Make sure the request isn't for more than we can handle
-        if (count > this.tokenBucket.bucketSize) {
-            throw new Error(`Requested tokens ${count} exceeds maximum tokens per interval ${this.tokenBucket.bucketSize}`);
-        }
-        const now = getMilliseconds();
-        // Advance the current interval and reset the current interval token count
-        // if needed
-        if (now < this.curIntervalStart || now - this.curIntervalStart >= this.tokenBucket.interval) {
-            this.curIntervalStart = now;
-            this.tokensThisInterval = 0;
-        }
-        // If we don't have enough tokens left in this interval, wait until the
-        // next interval
-        if (count > this.tokenBucket.tokensPerInterval - this.tokensThisInterval) {
-            if (this.fireImmediately) {
-                return -1;
-            }
-            else {
-                const waitMs = Math.ceil(this.curIntervalStart + this.tokenBucket.interval - now);
-                await wait(waitMs);
-                const remainingTokens = await this.tokenBucket.removeTokens(count);
-                this.tokensThisInterval += count;
-                return remainingTokens;
-            }
-        }
-        // Remove the requested number of tokens from the token bucket
-        const remainingTokens = await this.tokenBucket.removeTokens(count);
-        this.tokensThisInterval += count;
-        return remainingTokens;
-    }
-    /**
-     * Attempt to remove the requested number of tokens and return immediately.
-     * If the bucket (and any parent buckets) contains enough tokens and we
-     * haven't spent too many tokens in this interval already, this will return
-     * true. Otherwise, false is returned.
-     * @param {Number} count The number of tokens to remove.
-     * @param {Boolean} True if the tokens were successfully removed, otherwise
-     *  false.
-     */
-    tryRemoveTokens(count) {
-        // Make sure the request isn't for more than we can handle
-        if (count > this.tokenBucket.bucketSize)
-            return false;
-        const now = getMilliseconds();
-        // Advance the current interval and reset the current interval token count
-        // if needed
-        if (now < this.curIntervalStart || now - this.curIntervalStart >= this.tokenBucket.interval) {
-            this.curIntervalStart = now;
-            this.tokensThisInterval = 0;
-        }
-        // If we don't have enough tokens left in this interval, return false
-        if (count > this.tokenBucket.tokensPerInterval - this.tokensThisInterval)
-            return false;
-        // Try to remove the requested number of tokens from the token bucket
-        const removed = this.tokenBucket.tryRemoveTokens(count);
-        if (removed) {
-            this.tokensThisInterval += count;
-        }
-        return removed;
-    }
-    /**
-     * Returns the number of tokens remaining in the TokenBucket.
-     * @returns {Number} The number of tokens remaining.
-     */
-    getTokensRemaining() {
-        this.tokenBucket.drip();
-        return this.tokenBucket.content;
-    }
-}
-
-const securityConfig$2 = useRuntimeConfig().security;
-const _6uDBPt = defineEventHandler(async (event) => {
-  const ip = getRequestHeader(event, "x-forwarded-for");
-  if (!cache.get(ip)) {
-    const cachedLimiter = new RateLimiter(securityConfig$2.rateLimiter.value);
-    cache.put(ip, cachedLimiter, 1e4);
-  } else {
-    const cachedLimiter = cache.get(ip);
-    if (cachedLimiter.getTokensRemaining() > 1) {
-      await cachedLimiter.removeTokens(1);
-      cache.put(ip, cachedLimiter, 1e4);
-    } else {
-      if (securityConfig$2.rateLimiter.throwError) {
-        throw createError({ statusCode: 429, statusMessage: "Too Many Requests" });
-      } else {
-        return { statusCode: 429, statusMessage: "Too Many Requests" };
-      }
-    }
-  }
-});
-
-const securityConfig$1 = useRuntimeConfig().security;
-const xssValidator = new FilterXSS(securityConfig$1.xssValidator.value);
-const _AU2BWe = defineEventHandler(async (event) => {
-  if (["POST", "GET"].includes(event.node.req.method)) {
-    const valueToFilter = event.node.req.method === "GET" ? getQuery(event) : readBody(event);
-    const stringifiedValue = JSON.stringify(valueToFilter);
-    const processedValue = xssValidator.process(JSON.stringify(valueToFilter));
-    if (processedValue !== stringifiedValue) {
-      if (securityConfig$1.requestSizeLimiter.throwError) {
-        throw createError({ statusCode: 400, statusMessage: "Bad Request" });
-      } else {
-        return { statusCode: 400, statusMessage: "Bad Request" };
-      }
-    }
-  }
-});
-
-const securityConfig = useRuntimeConfig().security;
-const _wVKbSN = defineEventHandler(defineCorsEventHandler(securityConfig.corsHandler.value));
-
 const useConfig = () => useRuntimeConfig().serverMeilisearchClient;
 
-const _kAbFXl = defineEventHandler(async (event) => {
+const _bdxyfS = defineEventHandler(async (event) => {
   const { hostUrl, adminApiKey } = useConfig();
   if (!event.context.serverMeilisearchClient) {
     event.context.serverMeilisearchClient = new MeiliSearch({
@@ -3499,7 +3187,7 @@ const json = defineTransformer({
     let parsed;
     if (typeof content === "string") {
       if (_id.endsWith("json5")) {
-        parsed = (await import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
+        parsed = (await import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/node_modules/json5/lib/index.js').then((m) => m.default || m)).parse(content);
       } else if (_id.endsWith("json")) {
         parsed = destr(content);
       }
@@ -3825,7 +3513,7 @@ const getContentQuery = (event) => {
   return query;
 };
 
-const _RkHUEJ = defineEventHandler(async (event) => {
+const _EZ81BC = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (query.first) {
     const content = await serverQueryContent(event, query).findOne();
@@ -3856,7 +3544,7 @@ const _RkHUEJ = defineEventHandler(async (event) => {
   return contents;
 });
 
-const _aQbclg = defineEventHandler(async (event) => {
+const _dZbUNg = defineEventHandler(async (event) => {
   const { content } = useRuntimeConfig();
   const now = Date.now();
   const contents = await serverQueryContent(event).find();
@@ -3958,7 +3646,7 @@ function isObject(obj) {
   return Object.prototype.toString.call(obj) === "[object Object]";
 }
 
-const _UXgnM1 = defineEventHandler(async (event) => {
+const _9RJDn3 = defineEventHandler(async (event) => {
   const query = getContentQuery(event);
   if (!isPreview(event) && Object.keys(query).length === 0) {
     const cache = await cacheStorage.getItem("content-navigation.json");
@@ -3995,23 +3683,19 @@ const _UXgnM1 = defineEventHandler(async (event) => {
   return createNav(contents, configs);
 });
 
-const _lazy_vPFtw7 = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_9GayM1 = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_vPFtw7, lazy: true, middleware: false, method: undefined },
-  { route: '', handler: _2v7Soq, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _6uDBPt, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _AU2BWe, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _wVKbSN, lazy: false, middleware: false, method: undefined },
-  { route: '', handler: _kAbFXl, lazy: false, middleware: false, method: undefined },
-  { route: '/api/_content/query/:qid/**:params', handler: _RkHUEJ, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query/:qid', handler: _RkHUEJ, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/query', handler: _RkHUEJ, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/cache.json', handler: _aQbclg, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid/**:params', handler: _UXgnM1, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation/:qid', handler: _UXgnM1, lazy: false, middleware: false, method: "get" },
-  { route: '/api/_content/navigation', handler: _UXgnM1, lazy: false, middleware: false, method: "get" },
-  { route: '/**', handler: _lazy_vPFtw7, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_9GayM1, lazy: true, middleware: false, method: undefined },
+  { route: '', handler: _bdxyfS, lazy: false, middleware: false, method: undefined },
+  { route: '/api/_content/query/:qid/**:params', handler: _EZ81BC, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query/:qid', handler: _EZ81BC, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/query', handler: _EZ81BC, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/cache.json', handler: _dZbUNg, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid/**:params', handler: _9RJDn3, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation/:qid', handler: _9RJDn3, lazy: false, middleware: false, method: "get" },
+  { route: '/api/_content/navigation', handler: _9RJDn3, lazy: false, middleware: false, method: "get" },
+  { route: '/**', handler: _lazy_9GayM1, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -4143,9 +3827,9 @@ const appRootTag = "div";
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
-const getServerEntry = () => import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/Applications/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('file://C:/Users/Basti/OneDrive/Documents/My%20Websites/Handmade%20Sites/Javascript-Projects/Nuxt-Projects/AlternateCMS-Framework/Here2MingleCompany-Sites/here2mingle-frontend/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {
@@ -4327,7 +4011,7 @@ const renderer$1 = /*#__PURE__*/Object.freeze({
   default: renderer
 });
 
-const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
+const _virtual__headStatic = {"headTags":"<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<script src=\"http://meeovicms.com:3005/umami.js\" async=\"\" data-website-id=\"fd2dae48-9e2f-4461-8d3b-aaa3e8b98751\"></script>","bodyTags":"","bodyTagsOpen":"","htmlAttrs":"","bodyAttrs":""};
 
 const _virtual__headStatic$1 = /*#__PURE__*/Object.freeze({
   __proto__: null,

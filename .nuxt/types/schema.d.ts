@@ -1,15 +1,14 @@
 import { NuxtModule } from '@nuxt/schema'
 declare module '@nuxt/schema' {
   interface NuxtConfig {
-    ["apollo"]?: typeof import("@nuxtjs/apollo").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["graphql-client"]?: typeof import("nuxt-graphql-client").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["content"]?: typeof import("@nuxt/content").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["i18n"]?: typeof import("@nuxtjs/i18n").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    ["security"]?: typeof import("nuxt-security").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["meilisearch"]?: typeof import("nuxt-meilisearch").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["directus"]?: typeof import("nuxt-directus").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["devtools"]?: typeof import("C:/Users/Basti/AppData/Roaming/npm/node_modules/@nuxt/devtools/module").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["nuxt-config-schema"]?: typeof import("nuxt-config-schema").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@nuxtjs/apollo", NuxtConfig["apollo"]] | ["@nuxt/content", NuxtConfig["content"]] | ["@nuxtjs/i18n", NuxtConfig["i18n"]] | ["nuxt-security", NuxtConfig["security"]] | ["nuxt-meilisearch", NuxtConfig["meilisearch"]] | ["C:/Users/Basti/AppData/Roaming/npm/node_modules/@nuxt/devtools/module", NuxtConfig["devtools"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
+    modules?: (NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["nuxt-graphql-client", NuxtConfig["graphql-client"]] | ["@nuxt/content", NuxtConfig["content"]] | ["nuxt-meilisearch", NuxtConfig["meilisearch"]] | ["nuxt-directus", NuxtConfig["directus"]] | ["C:/Users/Basti/AppData/Roaming/npm/node_modules/@nuxt/devtools/module", NuxtConfig["devtools"]] | ["nuxt-config-schema", NuxtConfig["nuxt-config-schema"]] | ["@nuxt/telemetry", NuxtConfig["telemetry"]])[],
   }
   interface RuntimeConfig {
    app: {
@@ -18,6 +17,10 @@ declare module '@nuxt/schema' {
       buildAssetsDir: string,
 
       cdnURL: string,
+   },
+
+   "graphql-client": {
+      clients: any,
    },
 
    content: {
@@ -140,174 +143,6 @@ declare module '@nuxt/schema' {
       },
    },
 
-   security: {
-      headers: {
-         crossOriginResourcePolicy: {
-            value: string,
-
-            route: string,
-         },
-
-         crossOriginOpenerPolicy: {
-            value: string,
-
-            route: string,
-         },
-
-         crossOriginEmbedderPolicy: {
-            value: string,
-
-            route: string,
-         },
-
-         contentSecurityPolicy: {
-            value: {
-               "base-uri": Array<string>,
-
-               "font-src": Array<string>,
-
-               "form-action": Array<string>,
-
-               "frame-ancestors": Array<string>,
-
-               "img-src": Array<string>,
-
-               "object-src": Array<string>,
-
-               "script-src-attr": Array<string>,
-
-               "style-src": Array<string>,
-
-               "upgrade-insecure-requests": boolean,
-            },
-
-            route: string,
-         },
-
-         originAgentCluster: {
-            value: string,
-
-            route: string,
-         },
-
-         referrerPolicy: {
-            value: string,
-
-            route: string,
-         },
-
-         strictTransportSecurity: {
-            value: {
-               maxAge: number,
-
-               includeSubdomains: boolean,
-            },
-
-            route: string,
-         },
-
-         xContentTypeOptions: {
-            value: string,
-
-            route: string,
-         },
-
-         xDNSPrefetchControl: {
-            value: string,
-
-            route: string,
-         },
-
-         xDownloadOptions: {
-            value: string,
-
-            route: string,
-         },
-
-         xFrameOptions: {
-            value: string,
-
-            route: string,
-         },
-
-         xPermittedCrossDomainPolicies: {
-            value: string,
-
-            route: string,
-         },
-
-         xXSSProtection: {
-            value: string,
-
-            route: string,
-         },
-      },
-
-      requestSizeLimiter: {
-         value: {
-            maxRequestSizeInBytes: number,
-
-            maxUploadFileRequestInBytes: number,
-         },
-
-         route: string,
-
-         throwError: boolean,
-      },
-
-      rateLimiter: {
-         value: {
-            tokensPerInterval: number,
-
-            interval: string,
-
-            fireImmediately: boolean,
-         },
-
-         route: string,
-
-         throwError: boolean,
-      },
-
-      xssValidator: {
-         value: any,
-
-         route: string,
-
-         throwError: boolean,
-      },
-
-      corsHandler: {
-         value: {
-            origin: string,
-
-            methods: Array<string>,
-
-            preflight: {
-               statusCode: number,
-            },
-         },
-
-         route: string,
-
-         throwError: boolean,
-      },
-
-      allowedMethodsRestricter: {
-         value: string,
-
-         route: string,
-
-         throwError: boolean,
-      },
-
-      hidePoweredBy: boolean,
-
-      basicAuth: boolean,
-
-      enabled: boolean,
-   },
-
    serverMeilisearchClient: {
       hostUrl: string,
 
@@ -335,6 +170,48 @@ declare module '@nuxt/schema' {
    },
   }
   interface PublicRuntimeConfig {
+   GQL_HOST: string,
+
+   "graphql-client": {
+      clients: {
+         default: {
+            token: {
+               type: string,
+
+               name: string,
+            },
+
+            proxyCookies: boolean,
+
+            tokenStorage: {
+               mode: string,
+
+               cookieOptions: {
+                  maxAge: number,
+
+                  secure: boolean,
+               },
+
+               name: string,
+            },
+
+            preferGETQueries: boolean,
+
+            host: string,
+         },
+      },
+
+      watch: boolean,
+
+      autoImport: boolean,
+
+      functionPrefix: string,
+
+      documentPaths: Array<string>,
+
+      preferGETQueries: boolean,
+   },
+
    content: {
       locales: Array<any>,
 
@@ -445,6 +322,16 @@ declare module '@nuxt/schema' {
 
          keepZeroFacets: boolean,
       },
+   },
+
+   directus: {
+      url: string,
+
+      autoFetch: boolean,
+
+      fetchUserParams: any,
+
+      token: any,
    },
   }
 }

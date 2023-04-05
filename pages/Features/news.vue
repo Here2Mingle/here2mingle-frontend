@@ -1,6 +1,6 @@
 <template>
     <div>
-      <featuremenu />
+      <newsbar />
       <section data-bs-version="5.1" class="features3 cid-twlvvwx0TL" id="features3-9">
 
     
@@ -81,10 +81,10 @@
 </template>
 
 <script>
-    import featuremenu from '../../components/Menus/featuremenu.vue'
+    import newsbar from '../../components/Menus/newsbar.vue'
 
     export default {
-        components: { featuremenu }
+        components: { newsbar }
     }
 </script>
 
